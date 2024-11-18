@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal - YNLC</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Bienvenido a la página YNLC</h1>
+        <h1>Bienvenido a YNLC</h1>
     </header>
+
     <main>
-        <p id="welcome-message">¡Por favor ingresa tu nombre para personalizar tu experiencia!</p>
-        <form id="name-form">
-            <input type="text" id="user-name" placeholder="Ingresa tu nombre" required>
-            <button type="submit">Aceptar</button>
-        </form>
-        <p id="personalized-message"></p>
-        <div class="button-container">
-            <button class="animated-btn" onclick="navigateTo('page2.html')">Galería</button>
-            <button class="animated-btn" onclick="navigateTo('page3.html')">Tabla de Operaciones</button>
-        </div>
+        <section>
+            <h2>Bienvenido a la Página Principal</h2>
+            <p>En esta página podrás encontrar:</p>
+            <ul>
+                <li><strong>Galería de Imágenes:</strong> Diferentes imágenes con efectos.</li>
+                <li><strong>Operaciones Matemáticas:</strong> Realiza operaciones como multiplicación, exponente y resta.</li>
+                <li><strong>Formulario de Bienvenida:</strong> Te pediremos tu nombre y edad.</li>
+            </ul>
+
+            <div class="animated-btn" onclick="navigateTo('page2.html')">Ir a Galería</div>
+            <div class="animated-btn" onclick="navigateTo('page3.html')">Ir a Operaciones</div>
+        </section>
     </main>
 </body>
 </html>

@@ -5,21 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería - YNLC</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts2.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Galería de Imágenes - YNLC</h1>
     </header>
-    <main>
-        <p id="welcome-message">¡Bienvenido a la galería! Por favor, ingresa tu edad:</p>
-        <form id="age-form">
-            <input type="number" id="user-age" placeholder="Ingresa tu edad" required>
-            <button type="submit">Aceptar</button>
-        </form>
-        <p id="age-message"></p>
 
-        <div class="gallery">
+    <main>
+        <section class="gallery">
             <div class="image-container">
                 <img src="image1.jpg" alt="Imagen 1" class="animated-img" id="img1">
             </div>
@@ -35,12 +28,9 @@
             <div class="image-container">
                 <img src="image5.jpg" alt="Imagen 5" class="animated-img" id="img5">
             </div>
-        </div>
+        </section>
 
-        <div class="button-container">
-            <button class="animated-btn" onclick="navigateTo('index.html')">Página Principal</button>
-            <button class="animated-btn" onclick="navigateTo('page3.html')">Tabla de Operaciones</button>
-        </div>
+        <div class="animated-btn" onclick="navigateTo('index.html')">Volver a la Página Principal</div>
     </main>
 </body>
 </html>
