@@ -7,12 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault(); // Evita que el formulario se envíe
         const userAge = parseInt(document.getElementById("user-age").value.trim(), 10);
 
-        // Verifica si la edad es mayor o menor o igual a 20
+        // Verifica la condición de la edad
         if (!isNaN(userAge)) {
             if (userAge > 20) {
-                ageMessage.textContent = "¡Eres mayor de 20 años!";
+                ageMessage.textContent = "¡Eres mayor de 20 años! :)";
+            } else if (userAge === 20) {
+                ageMessage.textContent = "¡Tienes exactamente 20 años! :)";
             } else {
-                ageMessage.textContent = "¡Eres menor o igual a 20 años!";
+                ageMessage.textContent = "¡Eres menor a 20 años! :(";
             }
         } else {
             ageMessage.textContent = "Por favor, ingresa un número válido :).";
