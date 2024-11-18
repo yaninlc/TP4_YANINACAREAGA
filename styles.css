@@ -201,14 +201,6 @@ tbody tr:nth-child(odd) {
     background-color: #ffcccb; /* Rosa claro */
 }
 
-/* Estilizar el contenedor principal */
-main {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100vh; /* Ocupa toda la altura de la ventana */
-    background-color: #fffaf0; /* Fondo color crema */
-}
 
 /* Botones */
 button {
