@@ -21,9 +21,23 @@
                 <li><strong>Formulario de Bienvenida:</strong> Te pediremos tu nombre y edad.</li>
             </ul>
 
+            <!-- Formulario para ingresar nombre -->
+            <form id="name-form">
+                <label for="user-name">Ingrese su nombre:</label>
+                <input type="text" id="user-name" placeholder="Tu nombre" required>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- Mensaje personalizado -->
+            <div id="personalized-message"></div>
+
+            <!-- Botones de navegación -->
             <div class="animated-btn" onclick="navigateTo('page2.html')">Ir a Galería</div>
             <div class="animated-btn" onclick="navigateTo('page3.html')">Ir a Operaciones</div>
         </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
+

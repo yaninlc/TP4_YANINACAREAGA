@@ -14,23 +14,34 @@
     <main>
         <section class="gallery">
             <div class="image-container">
-                <img src="image1.jpg" alt="Imagen 1" class="animated-img" id="img1">
+                <img src="image1.jpg" alt="Se feliz " class="animated-img" id="img1">
             </div>
             <div class="image-container">
-                <img src="image2.jpg" alt="Imagen 2" class="animated-img" id="img2">
+                <img src="image2.jpg" alt="No te rindas" class="animated-img" id="img2">
             </div>
             <div class="image-container">
-                <img src="image3.jpg" alt="Imagen 3" class="animated-img" id="img3">
+                <img src="image3.jpg" alt="Cuentas conmigo" class="animated-img" id="img3">
             </div>
             <div class="image-container">
-                <img src="image4.jpg" alt="Imagen 4" class="animated-img" id="img4">
+                <img src="image4.jpg" alt="Una locura unica" class="animated-img" id="img4">
             </div>
             <div class="image-container">
-                <img src="image5.jpg" alt="Imagen 5" class="animated-img" id="img5">
+                <img src="image5.jpg" alt="Es un hasta luego" class="animated-img" id="img5">
             </div>
         </section>
 
+        <form id="age-form">
+            <label for="user-age">Introduce tu edad:</label>
+            <input type="number" id="user-age" name="user-age" required>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p id="age-message"></p> <!-- Mensaje de edad -->
+
         <div class="animated-btn" onclick="navigateTo('index.html')">Volver a la Página Principal</div>
     </main>
+    
+    <script src="script.js"></script> <!-- Asumiendo que el JS está en un archivo separado -->
 </body>
 </html>
+
