@@ -39,3 +39,8 @@ function calculate(operation) {
             alert("Operación no reconocida.");
     }
 }
+
+// Función para la navegación entre páginas
+function navigateTo(page) {
+    window.location.href = page;
+}

@@ -22,6 +22,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Función para cambiar la imagen al pasar el mouse
+function changeImage(img) {
+    img.style.transform = "scale(1.1)"; // Escala la imagen cuando el mouse está encima
+}
+
+// Función para restablecer la imagen
+function resetImage(img) {
+    img.style.transform = "scale(1)"; // Restablece la escala de la imagen
+}
+
 // Función para la navegación entre páginas
 function navigateTo(page) {
     window.location.href = page;
