@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla de Operaciones - YNLC</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts3.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página 3 - Operaciones</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Tabla de Operaciones - YNLC</h1>
-    </header>
+  <header>
+    <h1>Bienvenido a la Página 3</h1>
+  </header>
 
-    <main>
-        <!-- Tabla de Operaciones -->
-        <table>
-            <thead>
-                <tr>
-                    <th class="animated-header">Operación</th>
-                    <th class="animated-header">Descripción</th>
-                    <th class="animated-header">Acción</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Multiplicación</td>
-                    <td>Multiplica 2 números ingresados</td>
-                    <td><button onclick="calculate('multiplicacion')">Calcular</button></td>
-                </tr>
-                <tr>
-                    <td>Exponente</td>
-                    <td>Eleva al cuadrado 1 número ingresado</td>
-                    <td><button onclick="calculate('exponente')">Calcular</button></td>
-                </tr>
-                <tr>
-                    <td>Resta</td>
-                    <td>Resta 2 números ingresados</td>
-                    <td><button onclick="calculate('resta')">Calcular</button></td>
-                </tr>
-            </tbody>
-        </table>
+  <div class="welcome-message">
+    <p>Esta página contiene una tabla con las operaciones matemáticas que puedes realizar.</p>
+  </div>
 
-        <!-- Botones de navegación -->
-        <div class="animated-btn" onclick="navigateTo('index.html')">Volver a la Página Principal</div>
-        <div class="animated-btn" onclick="navigateTo('page2.html')">Ir a la Galería</div>
-    </main>
+  <div class="operations-table-container">
+    <table class="operations-table">
+      <thead>
+        <tr>
+          <th class="animated-header">OPERACIÓN</th>
+          <th class="animated-header">DESCRIPCIÓN</th>
+          <th class="animated-header">BOTONES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MULTIPLICACIÓN</td>
+          <td>Multiplica 2 números ingresados</td>
+          <td><button onclick="showMessage('multiplicación')">Ingresar valores</button></td>
+        </tr>
+        <tr>
+          <td>EXPONENTE 2</td>
+          <td>Eleva al cuadrado 1 número ingresado</td>
+          <td><button onclick="showMessage('exponente')">Ingresar valor</button></td>
+        </tr>
+        <tr>
+          <td>RESTA</td>
+          <td>Resta 2 números ingresados</td>
+          <td><button onclick="showMessage('resta')">Ingresar valores</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="buttons">
+    <button class="animated-button" onclick="location.href='index.html'">Ir a Página Principal</button>
+    <button class="animated-button" onclick="location.href='page2.html'">Ir a Página 2</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 YANINA LUGO</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
 

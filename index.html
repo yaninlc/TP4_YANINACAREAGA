@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal - YNLC</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal - YNLC</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a YNLC</h1>
-    </header>
+  <header>
+    <h1>Bienvenido a la página YNLC</h1>
+  </header>
+  
+  <div class="welcome-message">
+    <p id="greeting-message">¡Bienvenido a la página YNLC!</p>
+    <label for="user-name">Ingresa tu nombre: </label>
+    <input type="text" id="user-name" placeholder="Tu nombre">
+    <button onclick="greetUser()">Saludar</button>
+  </div>
 
-    <main>
-        <section>
-            <h2>Bienvenido a la Página Principal</h2>
-            <p>En esta página podrás encontrar:</p>
-            <ul>
-                <li><strong>Galería de Imágenes:</strong> Diferentes imágenes con efectos.</li>
-                <li><strong>Operaciones Matemáticas:</strong> Realiza operaciones como multiplicación, exponente y resta.</li>
-                <li><strong>Formulario de Bienvenida:</strong> Te pediremos tu nombre y edad.</li>
-            </ul>
+  <div class="description">
+    <p>Esta es la página principal. Las siguientes páginas contendrán:</p>
+    <ul>
+      <li>Página 2: Una galeria de imagenes</li>
+      <li>Página 3: Detalles de operaciones </li>
+    </ul>
+  </div>
 
-            <!-- Formulario para ingresar nombre -->
-            <form id="name-form">
-                <label for="user-name">Ingrese su nombre:</label>
-                <input type="text" id="user-name" placeholder="Tu nombre" required>
-                <button type="submit">Enviar</button>
-            </form>
+  <div class="buttons">
+    <button class="animated-button" onclick="location.href='pagina2.html'">Ir a Página 2</button>
+    <button class="animated-button" onclick="location.href='pagina3.html'">Ir a Página 3</button>
+    <button class="animated-button" onclick="location.href='pagina4.html'">Ir a Página 4</button>
+  </div>
 
-            <!-- Mensaje personalizado -->
-            <div id="personalized-message"></div>
+  <footer>
+    <p>&copy; 2024 YANINA LUGO</p>
+  </footer>
 
-            <!-- Botones de navegación -->
-            <div class="animated-btn" onclick="navigateTo('page2.html')">Ir a Galería</div>
-            <div class="animated-btn" onclick="navigateTo('page3.html')">Ir a Operaciones</div>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
 
